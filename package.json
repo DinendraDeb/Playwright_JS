@@ -1,0 +1,26 @@
+{
+  "name": "playwright_js_ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "Regression": "npx playwright test tests/WebApiPart2.spec.js --headed",
+    "webTests": "npx playwright test --grep @Web",
+    "apiTests": "npx playwright test --grep @Api",
+    "ChromeTests": "npx playwright test --config playwright.config1.js --project=ChromeExecution"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@azure/microsoft-playwright-testing": "^1.0.0-beta.7",
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.14.1",
+    "allure-playwright": "^3.2.1",
+    "javascript": "^1.0.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
