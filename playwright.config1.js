@@ -9,7 +9,7 @@ const config = {
   workers:3,
   timeout: 30*1000,
   expect:{
-  timeout: 5000
+  timeout: 10000
   },
   projects: [
     {

@@ -6,9 +6,8 @@ class DashBoardPage{
         this.products = page.locator(".card-body");
         this.productName = page.locator(".card-body b");
         this.cart = page.locator("[routerlink*=cart]")
-        
-
     }
+
     async addProductToCart(productName){
         console.log(await this.productName.allTextContents());
         console.log(await this.productName.first().textContent());
@@ -18,8 +17,9 @@ class DashBoardPage{
                 await this.products.nth(i).locator("text= Add To Cart").click();
                 break;
             }
-        }
+        }      
     }
+    
     async goToCart(){
         await this.cart.click();
         

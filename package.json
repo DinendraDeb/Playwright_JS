@@ -6,7 +6,8 @@
     "Regression": "npx playwright test tests/WebApiPart2.spec.js --headed",
     "webTests": "npx playwright test --grep @Web",
     "apiTests": "npx playwright test --grep @Api",
-    "ChromeTests": "npx playwright test --config playwright.config1.js --project=ChromeExecution"
+    "ChromeTests": "npx playwright test --config playwright.config1.js --project=ChromeExecution",
+    "CucumberRegression": "npx cucumber-js features/Ecommerce_Paramterization.feature --tags '@Regression_Parameterization' --retry 1 --exit --format html:reports/cucumber-report.html"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,7 @@
   },
   "dependencies": {
     "@cucumber/cucumber": "^11.2.0",
-    "exceljs": "^4.4.0"
+    "exceljs": "^4.4.0",
+    "playwright": "^1.52.0"
   }
 }
